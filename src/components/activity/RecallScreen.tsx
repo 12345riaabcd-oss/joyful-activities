@@ -11,7 +11,7 @@ interface Props {
 const RecallScreen = ({ data, onChange, onNext }: Props) => (
   <div className="animate-fade-in-up space-y-8">
     <div className="space-y-2">
-      <h1 className="text-[22px] font-heading font-medium text-foreground">
+      <h1 className="text-[22px] font-heading font-semibold text-foreground text-center">
         Think About a Moment
       </h1>
     </div>

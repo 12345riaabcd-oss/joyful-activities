@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600&family=Inter:wght@400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;600;700&family=Quicksand:wght@400;500;600&display=swap');
 
 @tailwind base;
 @tailwind components;
@@ -6,7 +6,7 @@
 
 @layer base {
   :root {
-    --background: 33 33% 93%;
+    --background: 0 0% 100%;
     --foreground: 0 0% 24%;
 
     --card: 150 18% 92%;
@@ -51,7 +51,7 @@
   }
 
   .dark {
-    --background: 33 33% 93%;
+    --background: 0 0% 100%;
     --foreground: 0 0% 24%;
     --card: 150 18% 92%;
     --card-foreground: 0 0% 24%;
@@ -82,15 +82,15 @@
 
   body {
     @apply bg-background text-foreground;
-    font-family: 'Inter', sans-serif;
+    font-family: 'Quicksand', sans-serif;
     font-size: 16px;
     line-height: 1.6;
     -webkit-font-smoothing: antialiased;
   }
 
   h1, h2, h3, h4, h5, h6 {
-    font-family: 'DM Sans', sans-serif;
-    font-weight: 500;
+    font-family: 'Nunito', sans-serif;
+    font-weight: 600;
   }
 
   input, textarea {
