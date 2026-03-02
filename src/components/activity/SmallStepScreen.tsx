@@ -6,18 +6,18 @@ interface Props {
   data: ActivityData;
   onChange: (fields: Partial<ActivityData>) => void;
   onGoHome: () => void;
+  onSave: () => void;
 }
 
-const SmallStepScreen = ({ data, onChange, onGoHome }: Props) => {
+const SmallStepScreen = ({ data, onChange, onGoHome, onSave }: Props) => {
   const handleSave = () => {
-    // Could persist data here
-    onGoHome();
+    onSave();
   };
 
   return (
     <div className="animate-fade-in-up space-y-8">
       <div className="space-y-2">
-        <h1 className="text-[22px] font-heading font-medium text-foreground">
+      <h1 className="text-[22px] font-heading font-semibold text-foreground text-center">
           A Small Step Forward
         </h1>
       </div>
@@ -37,9 +37,6 @@ const SmallStepScreen = ({ data, onChange, onGoHome }: Props) => {
       <div className="space-y-3">
         <Button variant="calm" size="lg" onClick={handleSave}>
           Save
-        </Button>
-        <Button variant="calmOutline" size="lg" onClick={onGoHome}>
-          Skip for Now
         </Button>
         <Button variant="calmOutline" size="lg" onClick={onGoHome}>
           Go to Home

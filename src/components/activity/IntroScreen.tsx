@@ -7,10 +7,10 @@ interface Props {
 const IntroScreen = ({ onNext }: Props) => (
   <div className="animate-fade-in-up space-y-8">
     <div className="space-y-2">
-      <h1 className="text-[22px] font-heading font-medium text-foreground">
+      <h1 className="text-[22px] font-heading font-semibold text-foreground text-center">
         Activities You Enjoy
       </h1>
-      <p className="text-muted-foreground font-heading text-lg">
+      <p className="text-muted-foreground font-heading text-lg text-center">
         Rediscovering Joyful Moments
       </p>
     </div>
